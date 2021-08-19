@@ -1,0 +1,140 @@
+
+.options-panel {
+    width: 67%;
+    height: 100%;
+    float: right;
+    background-image: linear-gradient(to top right, #df3c97, #3ed6c3);
+    opacity: 50%;
+}
+
+.settings-label {
+    position: fixed;
+    left: 37%;
+    top: 6%;
+    font-size: 4vw;
+    color: white;
+}
+
+.line {
+    position: fixed;
+    left: 37%;
+    top: 20%;
+    background-color: white;
+    width: 30%;
+    height:1%;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+}
+
+.checkbox-labels {
+    position: fixed;
+    left: 43%;
+    font-size: 2.5vw;
+    color:white;
+}
+
+.normal-checkbox {
+    position: fixed;
+    left: 38%;
+    top: 27%;
+    
+}
+
+.normal-label {
+    top: 26%;
+}
+
+.game-checkbox {
+    position: fixed;
+    left: 38%;
+    top: 42%;
+}
+
+.game-label {
+    top: 41%;
+}
+
+.drunk-checkbox {
+    position: fixed;
+    left: 38%;
+    top: 57%;
+}
+
+.drunk-label {
+    top: 56%;
+}
+
+.sexy-checkbox {
+    position: fixed;
+    left: 38%;
+    top: 72%;
+}
+
+.sexy-label {
+    top: 71%;
+}
+
+.descriptions {
+    position: fixed;
+    top:28%;
+    left: 43%;
+}
+
+p {
+    position: fixed;
+    color: white;
+    left: 43%;
+    font-size: 1.5vw;
+}
+
+.normal {
+    top: 28%;
+}
+
+.game {
+    top: 43%;
+}
+
+.drunk {
+    top: 58%;
+}
+
+.sexy {
+    top:73%;
+}
+
+.number-input {
+    position: fixed;
+    border-radius: 20px;
+    border: none;
+    top: 90%;
+    left: 38%;
+}
+
+.points {
+    position: fixed;
+    top: 84%;
+    left: 44%;
+    font-size: 2vw;
+}
+
+.start-button {
+    position: fixed;
+    background-color: #3ea6d6;
+    opacity: 76%;
+    border: none;
+    border-radius: 3vw;
+    font-size: 3vw;
+    width: 30vw;
+    top: 87%;
+    left: 65%;
+}

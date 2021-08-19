@@ -1,0 +1,62 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.player-panel {
+    width: 25%;
+    height: 100%;
+    float:  left;
+    background-image: linear-gradient(to top right, #3ea6d6, #84cc7f);
+    opacity: 67%;
+    align-content: center;
+    justify-content: center;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.player-info {
+    margin:0.2vw;
+    padding:0.2vw;
+    height:8%;
+    width:90%;
+    display: flex;
+}
+
+.player-name {
+    margin: 0px;
+    padding-left: 0.3vw;
+    padding-top:0.4vw;
+    border-radius: 1vw;
+    width: 80%;
+    opacity: 50%;
+    font-size: 2vw;
+}
+
+.player-score p{
+    margin: 0px;
+    font-size: 2vw;
+    color: white;
+    opacity: 1;
+    padding: 1vw;
+    padding-top:0.7vw;
+    padding-bottom:0.7vw;
+}
+
+
+.player-score {
+    position: fixed;
+    margin: 0px;
+    left: 20%;
+    opacity: 50%;
+    border-radius: 5vw;
+}
+

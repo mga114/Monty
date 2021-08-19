@@ -1,0 +1,75 @@
+
+.game-panel {
+    width: 75%;
+    height: 100%;
+    float: right;
+    background-image: linear-gradient(to top right, #df3c97, #3ed6c3);
+    opacity: 50%;
+}
+
+p {
+    margin: 0px;
+    color: white;
+    opacity: 0.7;
+    font-size: 2vw;
+}
+
+.card-text {
+    font-size: 3vw;
+    text-align: center;
+    padding: 2vw;
+    padding-top:3vw;
+}
+
+
+.action {
+    display: flex;
+    position: absolute;
+    bottom:5%;
+    left:31.35%;
+}
+
+.drink {
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+.done-button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border: none;
+    border-radius: 2vw;
+    font-size: 2vw;
+    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #84cc7f;
+}
+
+.done-button:hover {
+    opacity: 70%;
+}
+
+.card {
+    position: fixed;
+    left: 37%;
+    top: 17%;
+    width: 50%;
+    height: 65%;
+    background-color: #3ea6d6;
+    border-radius: 3vw;
+}
+
+.reset-button {
+    position: absolute;
+    top:5%;
+    right: 3%;
+    border:none;
+    border-radius: 3vw;
+    background-color: #3ea6d6;
+    color: white;
+    padding:1vw;
+}

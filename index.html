@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monty</title>
+    <link href="stylesheets/player_name_styles.css" rel="stylesheet">
+    <link href="stylesheets/options_panel_styles.css" rel="stylesheet">
+    <script src="scripts/cardInfo.js" defer></script>
+    <script src="scripts/interfaceHandler.js" defer></script>
+    <script src="scripts/playerInfo.js" defer></script>
+    <script src="scripts/gameController.js" defer></script>
+</head>
+<body>
+    <div class="names-panel">
+        <div class="player-input-form">
+        <form id="player-form">
+            <input type="text" id="name1" name="name-1" placeholder="Player 1" 
+            class="player-input-field player1">
+            <input type="text" id="name2" name="name-2" placeholder="Player 2" 
+            class="player-input-field player2">
+            <input type="text" id="name3" name="name-3" placeholder="Player 3" 
+            class="player-input-field player3">
+
+
+            <input onclick="addPlayer();" type="button" value="Add Player" class="add-player">
+        </form>
+        </div>
+    </div>
+    <div class="options-panel">
+        <div class="settings-label">Game Settings</div>
+        <div class="line"></div>
+        <form>
+            <input class="normal-checkbox" type="checkbox" id="normal" name="normal" value="NormalCards">
+            <label class="normal-label checkbox-labels" for="normal">Normal Cards</label>
+            <input class="game-checkbox" type="checkbox" id="game" name="game" value="GameCards">
+            <label class="game-label checkbox-labels" for="game">Game Cards</label>
+            <input class="drunk-checkbox" type="checkbox" id="drunk" name="drunk" value="DrunkCards">
+            <label class="drunk-label checkbox-labels" for="drunk">Already Drunk Cards</label>
+            <input class="sexy-checkbox" type="checkbox" id="sexy" name="sexy" value="SexyCards">
+            <label class="sexy-label checkbox-labels" for="sexy">Sexy Cards</label>
+            <input id="points-to-win" style="background-color: #3ea6d6;" class="number-input" type="number" min="20" max="60" value=20>
+        </form>
+        <p class="normal">Normal cards for a normal time...</p>
+        <p class="game">Game Time!</p>
+        <p class="drunk">Secrets don't exist when you're already drunk</p>
+        <p class="sexy">If you wanna turn the heat wayyyyy up</p>
+        <p class="points">Points</p>
+        <button class="start-button" onclick="startGame();">Start Game</button>
+    </div>
+</body>
+</html>

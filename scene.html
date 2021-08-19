@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monty</title>
+    <link href="stylesheets/player_score_styles.css" rel="stylesheet">
+    <link href="stylesheets/game_styles.css" rel="stylesheet">
+    <script src="scripts/cardInfo.js" defer></script>
+    <script src="scripts/interfaceHandler.js" defer></script>
+    <script src="scripts/gameController.js" defer></script>
+</head>
+<body>
+    <div id="points-panel" class="player-panel">
+
+    </div>
+    <div class="game-panel">
+        <div class="card">
+            <p id="text" class="card-text"></p>
+            <div id="action" class="action interactable">
+                <p id='action-text' class="action-points">4 Points</p>
+                <input id='a-checkbox' class="action-checkbox" type="checkbox">
+            </div>
+            <div id="drink" class="drink interactable">
+                <p id='drink-text' class="drink-points">Drink 4 times (2 points)</p>
+                <input id='d-checkbox' class="drink-checkbox" type="checkbox">
+            </div>
+            <button id="done-button" onclick="getNewCard();" class="done-button">Done!</button>
+        </div>
+        <button onclick="resetGame();" class=reset-button>Reset</button>
+    </div>    
+</body>
+</html>
