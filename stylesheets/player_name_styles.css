@@ -5,6 +5,8 @@ html, body {
 
 }
 
+input { -webkit-user-select:text;}
+
 
 .names-panel {
     width: 33%;
@@ -12,6 +14,7 @@ html, body {
     float:  left;
     background-image: linear-gradient(to top right, #3ea6d6, #84cc7f);
     opacity: 67%;
+    -khtml-opacity: 0.67;
     align-content: center;
     justify-content: center;
     display: flex;
@@ -42,24 +45,21 @@ button:focus {
     border: none;
     opacity: 60%;
     user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+
 }
 
 input, select, textarea {
     color: white;
     opacity: 1;
     user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+
 }
 
 textarea:focus, input:focus {
     color: white;
     opacity: 1;
     user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+
 }
 
 ::placeholder {
