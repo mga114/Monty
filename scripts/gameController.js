@@ -81,15 +81,21 @@ class Controller {
         while (randPlayer == this.players.indexOf(pPlayer)) {
             randPlayer = this.getNextPlayer(this.players.length);
         }*/
-        let lp = JSON.parse(localStorage.getItem('last-player'));
-        if (lp.length == 2) {
-            lp.splice(1, 1);
+        if (this.currentCard.numPoints != 0) {
+            this.updatePreviousPlayers(randPlayer);
         }
-        lp.splice(0, 0, this.players[randPlayer]);
-        localStorage.setItem('last-player', JSON.stringify(lp));
         this.currentPlayer = this.players[randPlayer];
         this.players.splice(this.players.indexOf(this.currentPlayer), 1);
         this.setPlayerText (this.currentPlayer, this.players);
+    }
+
+    updatePreviousPlayers (currPlayerNum) {
+        let lp = JSON.parse(localStorage.getItem('last-player'));
+        if (lp.length >= nPlayers - 1) {
+            lp.splice(lp.length - 1, 1);
+        }
+        lp.splice(0, 0, this.players[currPlayerNum]);
+        localStorage.setItem('last-player', JSON.stringify(lp));
     }
 
 
@@ -201,6 +207,8 @@ class Controller {
         return false;
     }
 }
+
+let nPlayers = JSON.parse(localStorage.getItem('numPlayers'));
 
 let c = new Controller();
 

@@ -83,6 +83,10 @@ class InterfaceHandler {
     storePoints () {
         localStorage.setItem('points', JSON.stringify(document.getElementById('points-to-win').value));
     }
+
+    storePlayerNums () {
+        localStorage.setItem('numPlayers', JSON.stringify (numPlayers));
+    }
 }
 
 let numPlayers = 3;
@@ -95,6 +99,7 @@ function startGame() {
     if (!ih.invalid) {
         if (ih.constructCards()) {
             ih.storePoints();
+            ih.storePlayerNums();
             window.location.replace('scene.html');
         }
     }
